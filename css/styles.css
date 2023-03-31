@@ -1,0 +1,28 @@
+
+/* suntax
+
+    selector {
+        property : value
+    }
+
+    selector types
+         1. elment selector 
+
+*/
+
+
+body {
+    background-color: wheat;
+}
+
+ol {
+    list-style-type: none
+}
+
+li {
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}

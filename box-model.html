@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            selector
+                - element
+                - class
+                - id
+        */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .children {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #red-children {
+            background-color: red;
+            color: white;
+        }
+
+        .rounded {
+            border-radius: 10px;
+        }
+
+        .detail {
+            border: 5px solid black;
+            background-color: teal;
+            height: 200px;
+            width: 375px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white
+        }
+
+        body {
+            /* border: 1px dashed black; */
+        }
+
+        
+        table{
+           border-collapse: collapse;
+        }
+
+        th,td {
+            border: 1px solid;
+            padding:10px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <h1>Box Model </h1>
+    <ul>
+        <li>padding</li>
+        <li>border</li>
+        <li>margin</li>
+    </ul>
+
+    <div class="detail">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia perspiciatis sit, hic aspernatur ipsam
+            totam, mollitia, ab eligendi optio adipisci at? Sit, veniam perspiciatis porro magnam delectus animi sed!
+            Quasi.</p>
+
+    </div>
+
+    <div class="">
+        <div class="children rounded">
+            children -1
+        </div>
+        <div class="children rounded" id="red-children">
+            children -2
+        </div>
+        <div class="children rounded">
+            chidren-3
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>laptop</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>laptop</td>
+                <td>1000</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+
+
+</body>
+
+</html>

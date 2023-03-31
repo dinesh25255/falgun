@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .item {
+            background-color: orange;
+        } */
+
+
+        .container .item {
+            background-color: rgb(232, 214, 214);
+        }
+
+        .container div.item {
+            background-color: cyan;
+        }
+
+        /* .container .item {
+            background-color: red;
+        }
+
+        .item {
+            background-color: cyan;
+        } 
+        */
+        .item {
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        /* SCORE - 100 */
+        #red {
+            color: red;
+        }
+
+        /* score  - 010 */
+        .cyan {
+            color: cyan;
+        }
+
+        /* score - 002 */
+        body p {
+            color: rgb(0, 255, 170) ;
+        }
+
+        /* score - 001 */
+        p {
+            color: black  ;
+        }
+
+
+
+
+
+
+        /* specificity score 
+
+        id  > class > element
+        
+        selector - 000
+        
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <p  class="cyan" id="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, doloribus. Nam ipsam odio
+        dolorem hic
+        nobis
+        aperiam! Sapiente, ad aliquid esse architecto at laudantium minima a, laborum nisi nam ducimus.</p>
+
+
+
+</body>
+
+</html>

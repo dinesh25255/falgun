@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+    <style>
+        /* css resets */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* syntax
+            selector {
+                property: value;
+            }
+            selector 
+            - id
+             - class
+            -element
+        */
+        /* p {
+            color: red;
+        } */
+
+        .text-red {
+            color: red;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            padding: 20px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .products {
+            margin: 30px;
+        }
+
+        .product {
+            /* border: 1px solid; */
+            width: 300px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 9px 1px 15px -5px gray;
+            text-align: center;
+            display: inline-block;
+            margin-right: 1em;
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        .parent {
+            background-color: teal;
+            width: 500px;
+            color: white;
+        }
+
+        .child {
+            background-color: cyan;
+            width: 50%;
+        }
+
+        .product-price {
+            /* font-size: 32px; */
+            font-size: 2em;
+            font-size: 2rem;
+        }
+
+        .product-description {
+            text-align: justify;
+            border-top: 1px solid gray;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        .half {
+            width: 50%;
+        }
+
+        body {
+            margin-left: 1em;
+            /* 16px */
+            font-family: 'Alkatra', cursive;
+            font-family: roboto, sans-serif;
+            background-color: gray;
+            background-color: rgb(255, 255, 0);
+            background-color: magenta;
+            background-color: #F0F8FF;
+            /* 
+                sans 
+                sans serif
+                monospace 
+            */
+        }
+
+        .container {
+            background-color: teal;
+        }
+
+        .item {
+            background-color: cyan;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        /* selectors
+            id
+            class
+            element/tag 
+
+            combination of selectors
+                - descendent selecotrs
+                - direct child selecotr 
+        */
+
+        .products>p {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .product img{
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="">
+
+    </header>
+    <main id="">
+        <div class="products">
+            <p><b>Products </b></p>
+            <div class="product">
+                <img width="100" class="product-image"
+                    src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+            <div class="product">
+                <img class="product-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+            <div class="product">
+                <img class="product-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a" alt="">
+                <p class="product-price">$100</p>
+                <p>shirt</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                    repellendus,
+                    ducimus odio doloribus sequi officia harum voluptate ratione cum et repudiandae inventore rerum!
+                    Ratione
+                    at tenetur eveniet laborum aliquam rerum!</p>
+            </div>
+        </div>
+
+        <!-- https://images.unsplash.com/photo-1583743814966-8936f5b7be1a -->
+
+        <h2>Measurement Units</h2>
+        <ul>
+            <li>px</li>
+            <li>em</li>
+            <li>rem</li>
+            <li>%</li>
+            <li>vh</li>
+            <li>vw</li>
+        </ul>
+
+        <h2>%</h2>
+        <!-- <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem qui quisquam, error tempore ad doloribus,
+                id tempora expedita ullam numquam saepe, vero blanditiis odio rerum dolore molestiae distinctio autem.
+                Deserunt.</p>
+        </div>
+
+    </div> -->
+
+        <!-- <div class="half">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem debitis eaque tenetur. Sed vero
+            neque asperiores repudiandae est rerum iure consequuntur at nostrum? Ab officia modi similique quas atque.
+        </p>
+    </div> -->
+
+
+        <h1>Inline vs inline block vs block</h1>
+        <h2>block level </h2>
+        <ul>
+            <li>h1, h2</li>
+            <li>p</li>
+            <li> &lt;div&gt;</li>
+            <li> ul</li>
+            <li> li</li>
+        </ul>
+        <h2>inline level </h2>
+        <a href="google">google</a>
+        <a href="google">google</a>
+        <a href="google">google</a>
+        <ul>
+            <li>&lt;a&gt;</li>
+            <li>&lt;span&gt;</li>
+        </ul>
+        <h2>inline - block </h2>
+        <ul>
+            <li>&lt;img&gt;</li>
+        </ul>
+
+
+
+        <div class="container">
+            <div class="item">item </div>
+            <div class="item">item </div>
+            <div class="item">item </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+</body>
+
+</html>

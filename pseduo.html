@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        /* .first{
+            background-color: teal;
+        } */
+
+
+        /* .box:first-child{
+            background-color: teal;
+        } */
+
+        /* .box:not(:first-child) {
+            background-color: teal;
+        } */
+
+        /* .box.first{
+            background-color: teal;
+        } */
+
+        .box:not(.first) {
+            background-color: teal;
+        }
+
+        /* .box:nth-child(2){
+            background-color: teal;
+        } */
+        /* .box:nth-child(3n){
+            background-color: teal;
+        } */
+
+        button {
+            border: 1px solid red;
+            /* padding: top right bottom left ; */
+            padding: .5rem 1rem;
+            /* padding: .5rem 1rem 1rem 1rem; */
+            margin-top: 1rem;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        button:hover {
+            background-color: red;
+            color: white;
+            /* transition: ; */
+            /* transition-property: background-color color;
+            transition-duration: 3s;
+            transition-delay: 0s; */
+
+            transform: translate(10px,-10px);
+            transition: all .5s;
+        }
+
+        ::selection{
+            background-color: orange;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <p></p>
+    <div class="container">
+        <div class="box first "></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <button> login </button>
+
+</body>
+
+</html>

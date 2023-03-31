@@ -1,0 +1,40 @@
+
+
+body {
+    background-color: antiquewhite;
+}
+/* 
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+} */
+
+a{
+    /* color:black; */
+    text-decoration: none;
+}
+
+.nav-links{
+    list-style-type: none;
+}
+
+.inline{
+    display: inline;
+}
+
+.active{
+    color:red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 
+    combination of selectors
+    - descendent selectors
+ */
+ 
+
+
